@@ -1,19 +1,28 @@
-import { useState, useEffect } from 'react';
+// src/App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
-    const [message, setMessage] = useState('');
-
-    useEffect(() => {
-        fetch('/api/test')
-            .then(res => res.json())
-            .then(data => setMessage(data.message));
-    }, []);
-
     return (
-        <div>
-            <h1>Welcome to My Frontend 🚀</h1>
-            <p>{message}</p>
-        </div>
+        <Router>
+            {/* Nav / Header */}
+            <nav className="bg-gray-800 p-4 text-white flex space-x-4">
+                <Link to="/" className="hover:text-gray-300">
+                    Home
+                </Link>
+                <Link to="/booking" className="hover:text-gray-300">
+                    Booking
+                </Link>
+            </nav>
+
+            {/* Main Routes */}
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/booking" element={<BookingPage />} />
+            </Routes>
+        </Router>
     );
 }
 
