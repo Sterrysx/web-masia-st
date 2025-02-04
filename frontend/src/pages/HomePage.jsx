@@ -5,25 +5,19 @@ import { Link } from "react-router-dom";
 function HomePage() {
     return (
         <div className="font-sans text-gray-800">
-            {/* Hero Section */}
+            {/* Hero Section with background image and overlay */}
             <header
-                className="
-          relative
-          h-[400px]
-          bg-cover bg-center
-          flex flex-col items-center justify-center
-          text-white
-        "
-                style={{
-                    backgroundImage: "url('https://via.placeholder.com/1200x400')",
-                }}
+                className="relative h-[400px] bg-cover bg-center flex flex-col items-center justify-center text-white"
+                style={{ backgroundImage: "url('https://via.placeholder.com/1200x400')" }}
             >
-                {/* Dark overlay */}
+                {/* Dark overlay for text readability */}
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-                {/* Hero content (above overlay) */}
+                {/* Content placed above the overlay */}
                 <div className="z-10 text-center px-4">
-                    <h1 className="text-4xl font-bold mb-4">Welcome to Stellar Progress Company</h1>
+                    <h1 className="text-4xl font-bold mb-4">
+                        Welcome to Stellar Progress Company
+                    </h1>
                     <p className="text-xl mb-8">
                         The easiest way to manage reservations and online bookings for your restaurant.
                     </p>
@@ -53,8 +47,7 @@ function HomePage() {
                             <div className="bg-white rounded shadow p-6">
                                 <h3 className="font-semibold mb-2">Feature Two</h3>
                                 <p className="text-gray-700">
-                                    Seamless integration with your existing website—add a booking widget, and you’re
-                                    good to go!
+                                    Seamless integration with your existing website—add a booking widget, and you’re good to go!
                                 </p>
                             </div>
                         </div>
@@ -62,8 +55,7 @@ function HomePage() {
                             <div className="bg-white rounded shadow p-6">
                                 <h3 className="font-semibold mb-2">Feature Three</h3>
                                 <p className="text-gray-700">
-                                    Access advanced analytics to understand peak hours, optimize seating, and
-                                    increase your revenue.
+                                    Access advanced analytics to understand peak hours, optimize seating, and increase your revenue.
                                 </p>
                             </div>
                         </div>

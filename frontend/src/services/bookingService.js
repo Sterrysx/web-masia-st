@@ -1,23 +1,21 @@
 // src/services/bookingService.js
+import axios from "axios";
 
-export async function createBooking({ date, time, guests }) {
-    try {
-        const response = await fetch("/api/bookings", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ date, time, guests }),
-        });
+const API_URL = "http://127.0.0.1:8000/api";
+// Adjust if you're on a different host/port
 
-        if (!response.ok) {
-            // Handle 4xx or 5xx errors
-            throw new Error("Failed to create booking");
-        }
+// Get the current availability of table types
+export async function fetchTableAvailability() {
+    const response = await axios.get(`${API_URL}/table-availability`);
+    return response.data; // e.g. [ {id:1, capacity:2, available_count:4}, ... ]
+}
 
-        return response.json();
-    } catch (error) {
-        console.error(error);
-        throw error;
-    }
+// Book a specific table type
+export async function bookTable(capacity, customer_name) {
+    // We only need to send capacity and optional name
+    const response = await axios.post(`${API_URL}/bookings`, {
+        capacity,
+        customer_name,
+    });
+    return response.data; // e.g. { message: '...', data: {...} }
 }
