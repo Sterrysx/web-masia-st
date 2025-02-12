@@ -6,8 +6,8 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import About from '../components/About';
 import MissionPhilosophy from '../components/MissionPhilosophy';
-import Reservations from '../components/Reservations';
 import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 
 function Home() {
     return (
@@ -20,7 +20,7 @@ function Home() {
                 <Services />
                 <About />
                 <MissionPhilosophy />
-                <Reservations />
+                <Contact />
             </main>
             <Footer />
         </div>

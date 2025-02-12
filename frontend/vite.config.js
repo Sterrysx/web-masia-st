@@ -8,5 +8,11 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:8000', // Proxy API calls to Laravel backend
     },
+    watch: {
+      usePolling: true, // Solución para detección de cambios en sistemas de archivos
+    },
+    hmr: {
+      overlay: false, // Evita que la pantalla se congele por errores menores
+    }
   },
 })
