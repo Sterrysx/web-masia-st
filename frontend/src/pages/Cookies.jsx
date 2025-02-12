@@ -87,7 +87,7 @@ export default function Cookies() {
                         <p>
                             Si tienes dudas sobre esta política, puedes contactarnos a través de:
                         </p>
-                        <p className="text-yellow-400">📧 stellarprogresscompany@gmail.com</p>
+                        <p className="text-yellow-400">📧 	info@stellarprogress.es</p>
                     </section>
                 </div>
             </main>

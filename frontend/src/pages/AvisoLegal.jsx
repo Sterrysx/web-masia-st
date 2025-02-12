@@ -23,7 +23,7 @@ export default function AvisoLegal() {
                         <p><strong>Titular:</strong> Sergi Calls</p>
                         <p><strong>NIF:</strong> 49805766W</p>
                         <p><strong>Domicilio:</strong> Folch i Torres, 98</p>
-                        <p><strong>Correo electrónico:</strong> stellarprogresscompany@gmail.com</p>
+                        <p><strong>Correo electrónico:</strong> 	info@stellarprogress.es</p>
                         <p><strong>Finalidad del sitio web:</strong> Blog corporativo</p>
                     </section>
 
