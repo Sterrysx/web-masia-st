@@ -7,7 +7,7 @@ import {
     ArrowDownTrayIcon,
     CheckIcon,
 } from '@heroicons/react/24/solid';
-import pdfFile from '../assets/servicios_ESP.pdf';
+import pdfFile from '../assets/Servicios_ESP.pdf';
 
 const servicesData = [
     {
