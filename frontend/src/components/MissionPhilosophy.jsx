@@ -1,12 +1,15 @@
 // components/MissionPhilosophy.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import businessDiscussion from '../assets/business-discussion.jpg';
+import handshake from '../assets/handshake.jpg';
+import laptop from '../assets/Laptop.jpg';
 
 const sections = [
     {
         id: 1,
         title: "Nuestro Reto 🎯",
-        image: "/src/assets/business-discussion.jpg",
+        image: businessDiscussion,
         text: (
             <>
                 En <strong>Stellar Progress</strong>, ayudamos a los restaurantes y comercios a <strong>adaptarse, evolucionar y prosperar</strong> en un entorno en constante cambio.
@@ -22,7 +25,7 @@ const sections = [
     {
         id: 2,
         title: "Nuestra Filosofía 🌟",
-        image: "/src/assets/handshake.jpg",
+        image: handshake,
         text: (
             <>
                 En <strong>Stellar Progress</strong>, creemos en la importancia de los <strong>pequeños detalles</strong> y el <strong>compromiso con nuestros clientes</strong>.
@@ -38,7 +41,7 @@ const sections = [
     {
         id: 3,
         title: "Nuestras Herramientas 🚀",
-        image: "/src/assets/Laptop.jpg",
+        image: laptop,
         text: (
             <>
                 Para crear sitios web <strong>rápidos, modernos y de alta calidad</strong>, utilizamos las mejores tecnologías del mercado.
@@ -72,7 +75,6 @@ function MissionPhilosophy() {
                         >
                             <img src={section.image} alt={section.title} className="w-full h-48 object-cover" />
                             <div className="p-6 flex flex-col flex-grow">
-                                {/* Cambio aquí: Agregado text-gray-200 en lugar de text-white */}
                                 <h3 className="text-2xl font-bold mb-4 text-gray-200">{section.title}</h3>
                                 <p className="flex-grow mb-4 text-gray-200">{section.text}</p>
                                 <button
@@ -83,7 +85,6 @@ function MissionPhilosophy() {
                                 >
                                     Contáctanos
                                 </button>
-
                             </div>
                         </motion.div>
                     ))}
