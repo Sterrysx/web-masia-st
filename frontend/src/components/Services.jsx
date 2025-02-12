@@ -18,12 +18,12 @@ const servicesData = [
             <div className="group" key="1">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-1000 ">
                         Diseño web a medida → Una identidad digital única
                     </strong>
                 </div>
                 {/* Tooltip que se expande en el flujo normal */}
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Creamos páginas web profesionales desde cero, programadas al 100% sin plantillas, garantizando un diseño exclusivo y adaptado a la esencia de su restaurante.
                 </div>
             </div>,
@@ -34,7 +34,7 @@ const servicesData = [
                         Estética personalizada → La imagen que su negocio merece
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Nos adaptamos a su estilo y preferencias, combinando tendencias modernas con acabados de alta calidad para ofrecer una web visualmente atractiva y funcional.
                 </div>
             </div>,
@@ -45,7 +45,7 @@ const servicesData = [
                         Rendimiento optimizado → Rápida, segura y adaptada a cualquier dispositivo
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Nuestras páginas están diseñadas para cargar con velocidad, ofrecer una navegación fluida y ser totalmente responsivas en móviles, tablets y ordenadores.
                 </div>
             </div>,
@@ -56,7 +56,7 @@ const servicesData = [
                         Actualizaciones constantes → Una web siempre al día
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Nos encargamos del mantenimiento y actualización de su sitio web, asegurando que esté optimizado, seguro y alineado con las necesidades cambiantes de su negocio.
                 </div>
             </div>,
@@ -67,7 +67,7 @@ const servicesData = [
                         Soporte técnico 24/7 → Respuesta inmediata ante cualquier imprevisto
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Un equipo siempre disponible para resolver cualquier problema, hacer ajustes o implementar mejoras cuando lo necesite.
                 </div>
             </div>,
@@ -78,7 +78,7 @@ const servicesData = [
                         Integración con herramientas digitales → Más que una web, un sistema eficiente
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Conectamos su página con reservas, pedidos online, automatización de clientes y herramientas de marketing para potenciar su negocio al máximo.
                 </div>
             </div>,
@@ -89,7 +89,7 @@ const servicesData = [
                         Gestión sin complicaciones → Nos encargamos de todo por usted
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Olvídese de problemas técnicos y dedique su tiempo a lo que realmente importa. Nosotros garantizamos que su presencia digital funcione de manera impecable.
                 </div>
             </div>,
@@ -107,7 +107,7 @@ const servicesData = [
                         Menos tiempo gestionando reservas → Más enfoque en su negocio
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Nuestra plataforma automatiza gran parte del proceso de reservas a través de la web, reduciendo llamadas y mensajes manuales. Su equipo dedicará menos tiempo a la administración y más a ofrecer un excelente servicio.
                 </div>
             </div>,
@@ -118,7 +118,7 @@ const servicesData = [
                         Confirmaciones y recordatorios automáticos → Reducción de ausencias
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Cada reserva se confirma y recuerda automáticamente por WhatsApp o email, minimizando cancelaciones de última hora y asegurando una ocupación más estable.
                 </div>
             </div>,
@@ -129,7 +129,7 @@ const servicesData = [
                         Asignación inteligente de mesas → Espacio optimizado sin esfuerzo
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     El sistema distribuye las mesas automáticamente según la capacidad y reservas del restaurante, eliminando la necesidad de organizar manualmente la disposición de los clientes.
                 </div>
             </div>,
@@ -140,7 +140,7 @@ const servicesData = [
                         Cancelaciones sin impacto → Lista de espera automatizada
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Cuando un cliente cancela, nuestro sistema lo reemplaza de inmediato con la siguiente persona en lista de espera, evitando huecos en la agenda y maximizando la ocupación.
                 </div>
             </div>,
@@ -151,7 +151,7 @@ const servicesData = [
                         Comunicación automática con clientes → Menos tiempo respondiendo consultas
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Los clientes reciben automáticamente información sobre su reserva, ubicación, menú y disponibilidad, reduciendo la carga de trabajo del personal y mejorando la experiencia del usuario.
                 </div>
             </div>,
@@ -162,7 +162,7 @@ const servicesData = [
                         Reportes automáticos → Control total en un clic
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Obtenga informes mensuales detallados sobre reservas, ocupación y tendencias, sin necesidad de recopilar datos manualmente.
                 </div>
             </div>,
@@ -173,7 +173,7 @@ const servicesData = [
                         Feedback sin esfuerzo → Opiniones automatizadas para mejorar su servicio
                     </strong>
                 </div>
-                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
+                <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Envíe encuestas automáticas tras cada visita y reciba valoraciones en tiempo real, optimizando la experiencia del cliente sin invertir tiempo extra.
                 </div>
             </div>,
