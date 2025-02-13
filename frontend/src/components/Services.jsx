@@ -29,7 +29,7 @@ const servicesData = [
             </div>,
             <div className="group" key="2">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Estética personalizada → La imagen que su negocio merece
                     </strong>
@@ -40,7 +40,7 @@ const servicesData = [
             </div>,
             <div className="group" key="3">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Rendimiento optimizado → Rápida, segura y adaptada a cualquier dispositivo
                     </strong>
@@ -51,7 +51,7 @@ const servicesData = [
             </div>,
             <div className="group" key="4">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Actualizaciones constantes → Una web siempre al día
                     </strong>
@@ -62,7 +62,7 @@ const servicesData = [
             </div>,
             <div className="group" key="5">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Soporte técnico 24/7 → Respuesta inmediata ante cualquier imprevisto
                     </strong>
@@ -73,7 +73,7 @@ const servicesData = [
             </div>,
             <div className="group" key="6">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Integración con herramientas digitales → Más que una web, un sistema eficiente
                     </strong>
@@ -84,7 +84,7 @@ const servicesData = [
             </div>,
             <div className="group" key="7">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Gestión sin complicaciones → Nos encargamos de todo por usted
                     </strong>
@@ -102,7 +102,7 @@ const servicesData = [
         features: [
             <div className="group" key="1">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Menos tiempo gestionando reservas → Más enfoque en su negocio
                     </strong>
@@ -113,7 +113,7 @@ const servicesData = [
             </div>,
             <div className="group" key="2">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Confirmaciones y recordatorios automáticos → Reducción de ausencias
                     </strong>
@@ -124,7 +124,7 @@ const servicesData = [
             </div>,
             <div className="group" key="3">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Asignación inteligente de mesas → Espacio optimizado sin esfuerzo
                     </strong>
@@ -135,7 +135,7 @@ const servicesData = [
             </div>,
             <div className="group" key="4">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Cancelaciones sin impacto → Lista de espera automatizada
                     </strong>
@@ -146,7 +146,7 @@ const servicesData = [
             </div>,
             <div className="group" key="5">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Comunicación automática con clientes → Menos tiempo respondiendo consultas
                     </strong>
@@ -157,7 +157,7 @@ const servicesData = [
             </div>,
             <div className="group" key="6">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Reportes automáticos → Control total en un clic
                     </strong>
@@ -168,7 +168,7 @@ const servicesData = [
             </div>,
             <div className="group" key="7">
                 <div className="flex items-center">
-                    <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
                     <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
                         Feedback sin esfuerzo → Opiniones automatizadas para mejorar su servicio
                     </strong>
@@ -206,7 +206,7 @@ function Services() {
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                            <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
                             <div className="mb-4">{service.icon}</div>
                             <ul className="list-none pl-0 mb-4 space-y-2">
                                 {service.features.map((feature, index) => (
