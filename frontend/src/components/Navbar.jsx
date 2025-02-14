@@ -29,7 +29,7 @@ function Navbar() {
                     <ul className="flex space-x-6 font-thin text-white">
                         <li>
                             {isHome ? (
-                                <Link to="hero" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="hero" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Inicio
                                 </Link>
                             ) : (
@@ -40,7 +40,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="services" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="services" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Servicios
                                 </Link>
                             ) : (
@@ -51,7 +51,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="about" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="about" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Quiénes somos
                                 </Link>
                             ) : (
@@ -62,7 +62,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="contact" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="contact" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Contacto
                                 </Link>
                             ) : (
@@ -84,7 +84,7 @@ function Navbar() {
                     <ul className="flex flex-col space-y-4 font-thin p-4 text-white">
                         <li>
                             {isHome ? (
-                                <Link to="hero" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="hero" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Inicio
                                 </Link>
                             ) : (
@@ -95,7 +95,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="services" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="services" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Servicios
                                 </Link>
                             ) : (
@@ -106,7 +106,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="about" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="about" smooth={true} duration={500} offset={-80} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Quiénes somos
                                 </Link>
                             ) : (
@@ -117,7 +117,7 @@ function Navbar() {
                         </li>
                         <li>
                             {isHome ? (
-                                <Link to="contact" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
+                                <Link to="contact" smooth={true} duration={500} offset={-500} onClick={closeMenu} className="cursor-pointer hover:text-yellow-500 transition-colors">
                                     Contacto
                                 </Link>
                             ) : (
