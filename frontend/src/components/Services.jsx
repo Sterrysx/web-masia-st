@@ -9,20 +9,21 @@ import {
 } from '@heroicons/react/24/solid';
 import pdfFile from '../assets/Servicios_ESP.pdf';
 
+// Contenido de cada sección de servicios
 const servicesData = [
     {
         id: 1,
-        title: "Transformación Digital de Alto Nivel",
+        title: 'Transformación Digital de Alto Nivel',
         icon: <GlobeAltIcon className="w-10 h-10 text-yellow-500" />,
         features: [
             <div className="group" key="1">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-1000 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-1000">
                         Diseño web a medida → Una identidad digital única
                     </strong>
                 </div>
-                {/* Tooltip que se expande en el flujo normal */}
+                {/* Tooltip expandible al hacer hover */}
                 <div className="mt-0 overflow-hidden max-h-0 opacity-0 transition-all duration-1000 group-hover:mt-2 group-hover:max-h-40 group-hover:opacity-100 w-90 p-3 bg-gray-300 bg-opacity-90 text-gray-800 text-s rounded">
                     Creamos páginas web profesionales desde cero, programadas al 100% sin plantillas, garantizando un diseño exclusivo y adaptado a la esencia de su restaurante.
                 </div>
@@ -30,7 +31,7 @@ const servicesData = [
             <div className="group" key="2">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Estética personalizada → La imagen que su negocio merece
                     </strong>
                 </div>
@@ -41,7 +42,7 @@ const servicesData = [
             <div className="group" key="3">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Rendimiento optimizado → Rápida, segura y adaptada a cualquier dispositivo
                     </strong>
                 </div>
@@ -52,7 +53,7 @@ const servicesData = [
             <div className="group" key="4">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Actualizaciones constantes → Una web siempre al día
                     </strong>
                 </div>
@@ -63,7 +64,7 @@ const servicesData = [
             <div className="group" key="5">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Soporte técnico 24/7 → Respuesta inmediata ante cualquier imprevisto
                     </strong>
                 </div>
@@ -74,7 +75,7 @@ const servicesData = [
             <div className="group" key="6">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Integración con herramientas digitales → Más que una web, un sistema eficiente
                     </strong>
                 </div>
@@ -85,7 +86,7 @@ const servicesData = [
             <div className="group" key="7">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Gestión sin complicaciones → Nos encargamos de todo por usted
                     </strong>
                 </div>
@@ -97,13 +98,13 @@ const servicesData = [
     },
     {
         id: 2,
-        title: "Automatización y Optimización Inteligente",
+        title: 'Automatización y Optimización Inteligente',
         icon: <ChartBarIcon className="w-10 h-10 text-yellow-500" />,
         features: [
             <div className="group" key="1">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Menos tiempo gestionando reservas → Más enfoque en su negocio
                     </strong>
                 </div>
@@ -114,7 +115,7 @@ const servicesData = [
             <div className="group" key="2">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Confirmaciones y recordatorios automáticos → Reducción de ausencias
                     </strong>
                 </div>
@@ -125,7 +126,7 @@ const servicesData = [
             <div className="group" key="3">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Asignación inteligente de mesas → Espacio optimizado sin esfuerzo
                     </strong>
                 </div>
@@ -136,7 +137,7 @@ const servicesData = [
             <div className="group" key="4">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Cancelaciones sin impacto → Lista de espera automatizada
                     </strong>
                 </div>
@@ -147,7 +148,7 @@ const servicesData = [
             <div className="group" key="5">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Comunicación automática con clientes → Menos tiempo respondiendo consultas
                     </strong>
                 </div>
@@ -158,7 +159,7 @@ const servicesData = [
             <div className="group" key="6">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Reportes automáticos → Control total en un clic
                     </strong>
                 </div>
@@ -169,7 +170,7 @@ const servicesData = [
             <div className="group" key="7">
                 <div className="flex items-center">
                     <CheckIcon className="w-7 h-7 text-green-500 mr-2" />
-                    <strong className="cursor-pointer transform text-xl transition-transform duration-300 ">
+                    <strong className="cursor-pointer transform text-xl transition-transform duration-300">
                         Feedback sin esfuerzo → Opiniones automatizadas para mejorar su servicio
                     </strong>
                 </div>
@@ -184,6 +185,10 @@ const servicesData = [
 function Services() {
     return (
         <section id="services" className="py-16 bg-gray-800">
+            {/* Bloque SEO (sin Helmet),
+          si deseas metaetiquetas, puedes agregarlas en tu index.html o layout principal.
+          Aquí mantenemos sólo el contenido textual orientado a SEO. */}
+
             <div className="container mx-auto px-6">
                 <motion.div
                     className="text-center mb-12"
@@ -194,10 +199,9 @@ function Services() {
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
                         Digitalización y automatización sin complicaciones
                     </h2>
-                    <p className="mt-2 text-yellow-500">
-                        - Especializados en Restauración -
-                    </p>
+                    <p className="mt-2 text-yellow-500">- Especializados en Restauración -</p>
                 </motion.div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {servicesData.map((service) => (
                         <motion.div
@@ -215,7 +219,7 @@ function Services() {
                             </ul>
                             <button
                                 onClick={() => {
-                                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                                 }}
                                 className="mt-auto bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors"
                             >
@@ -224,6 +228,7 @@ function Services() {
                         </motion.div>
                     ))}
                 </div>
+
                 {/* Sección de descarga */}
                 <div className="text-center mt-16">
                     <h3 className="text-2xl py-3 mt-6 font-bold text-white mb-4">

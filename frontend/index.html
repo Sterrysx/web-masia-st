@@ -9,7 +9,7 @@
   <meta name="description" content="Soluciones integrales de digitalización, automatización y optimización para restaurantes. Diseñamos páginas web a medida, sistemas de reservas y gestión, optimizados para dispositivos móviles, mejorando la experiencia del cliente." />
 
   <!-- Meta Keywords -->
-  <meta name="keywords" content="digitalización, automatización, restaurantes, diseño web, reservas, RMS, POS, optimización, experiencia del cliente" />
+  <meta name="keywords" content="Stellar Progress, digitalización, automatización, restaurantes, diseño web, reservas, RMS, POS, optimización, experiencia del cliente" />
 
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
@@ -34,9 +34,65 @@
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Datos estructurados con JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Stellar Progress",
+      "url": "https://stellarprogress.es/",
+      "logo": "https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png",
+      "description": "Soluciones integrales de digitalización, automatización y optimización para restaurantes.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+34 650 341 022",
+          "contactType": "customer service"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/stellarprogresscompany",
+        "https://www.instagram.com/stellarprogress"
+      ]
+    }
+  </script>
+
+  <!-- Tailwind (o tu CSS) debe incluir la clase sr-only -->
+  <style>
+    /* Versión minimalista de sr-only */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
 </head>
 <body>
+<!-- Ocultamos el contenido SEO con sr-only -->
+<header class="sr-only">
+  <h1>Stellar Progress</h1>
+</header>
+<main class="sr-only">
+  <section>
+    <h2>Digitalización y Automatización para Comercios y Restaurantes</h2>
+    <p>
+      Bienvenido a <strong>Stellar Progress</strong>. Ofrecemos soluciones para tu restaurante o comercio:
+      diseño web a medida, sistemas de reservas eficientes y estrategias de automatización.
+    </p>
+  </section>
+</main>
+
+<!-- Punto de montaje principal para React u otro framework -->
 <div id="root"></div>
+
+<!-- Carga del script principal (react, vite, etc.) -->
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
