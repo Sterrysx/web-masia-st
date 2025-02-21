@@ -2,21 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <!-- Título para la pestaña (tab) -->
   <title>Digitalización y Automatización para Comercios y Restaurantes | Stellar Progress Booking System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Meta Description -->
-  <meta
-          name="description"
-          content="Soluciones integrales de digitalización, automatización y optimización para restaurantes. Diseñamos páginas web a medida, sistemas de reservas y gestión, optimizados para dispositivos móviles, mejorando la experiencia del cliente."
-  />
+  <meta name="description" content="Soluciones integrales de digitalización, automatización y optimización para restaurantes. Diseñamos páginas web a medida, sistemas de reservas y gestión, optimizados para dispositivos móviles, mejorando la experiencia del cliente." />
 
   <!-- Meta Keywords -->
-  <meta
-          name="keywords"
-          content="Stellar Progress, digitalización, automatización, restaurantes, diseño web, reservas, RMS, POS, optimización, experiencia del cliente"
-  />
+  <meta name="keywords" content="Stellar Progress, digitalización, automatización, restaurantes, diseño web, reservas, RMS, POS, optimización, experiencia del cliente" />
 
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
@@ -25,44 +18,34 @@
   <link rel="canonical" href="https://stellarprogress.es/" />
 
   <!-- Open Graph / Facebook -->
-  <meta
-          property="og:title"
-          content="Digitalización y Automatización para Comercios y Restaurantes | Stellar Progress Booking System"
-  />
-  <meta
-          property="og:description"
-          content="Soluciones integrales para la transformación digital de restaurantes, con diseño web a medida, sistemas de reservas y gestión automatizada."
-  />
+  <meta property="og:title" content="Digitalización y Automatización para Comercios y Restaurantes | Stellar Progress Booking System" />
+  <meta property="og:description" content="Soluciones integrales para la transformación digital de restaurantes, con diseño web a medida, sistemas de reservas y gestión automatizada." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stellarprogress.es/" />
-  <meta
-          property="og:image"
-          content="https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png"
-  />
+  <meta property="og:image" content="https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta
-          name="twitter:title"
-          content="Digitalización y Automatización para Comercios y Restaurantes | Stellar Progress Booking System"
-  />
-  <meta
-          name="twitter:description"
-          content="Soluciones integrales para la transformación digital de restaurantes, con diseño web a medida, sistemas de reservas y gestión automatizada."
-  />
-  <meta
-          name="twitter:image"
-          content="https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png"
-  />
+  <meta name="twitter:title" content="Digitalización y Automatización para Comercios y Restaurantes | Stellar Progress Booking System" />
+  <meta name="twitter:description" content="Soluciones integrales para la transformación digital de restaurantes, con diseño web a medida, sistemas de reservas y gestión automatizada." />
+  <meta name="twitter:image" content="https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png" />
 
-  <!-- Favicon: usamos el logo directamente en formato PNG -->
-  <link
-          rel="icon"
-          href="https://stellarprogress.es/src/assets/LOGO/LOGO-STELLAR-PNG.png"
-          type="image/png"
-  />
+  <!-- Favicon / Icons -->
+  <!-- Indicamos primero la de 512x512 como icono principal -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/src/assets/LOGO/Favicon/android-chrome-512x512.png" />
+
+  <!-- Luego definimos otras, para que el navegador elija o haga fallback -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/LOGO/Favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/LOGO/Favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/LOGO/Favicon/favicon-16x16.png" />
+
+  <!-- Apple Touch Icon (iOS) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/LOGO/Favicon/apple-touch-icon.png" />
+
+  <!-- Manifest (si lo usas para Progressive Web App) -->
+  <link rel="manifest" href="/src/assets/LOGO/Favicon/site.webmanifest" />
 
   <!-- Datos estructurados con JSON-LD -->
   <script type="application/ld+json">
@@ -87,8 +70,9 @@
     }
   </script>
 
-  <!-- Clase sr-only para ocultar texto sin perder accesibilidad -->
+  <!-- Tailwind (o tu CSS) debe incluir la clase sr-only -->
   <style>
+    /* Versión minimalista de sr-only */
     .sr-only {
       position: absolute !important;
       width: 1px !important;
@@ -107,7 +91,6 @@
 <header class="sr-only">
   <h1>Stellar Progress</h1>
 </header>
-
 <main class="sr-only">
   <section>
     <h2>Digitalización y Automatización para Comercios y Restaurantes</h2>
@@ -121,7 +104,7 @@
 <!-- Punto de montaje principal para React u otro framework -->
 <div id="root"></div>
 
-<!-- Carga del script principal (React, Vite, etc.) -->
+<!-- Carga del script principal (react, vite, etc.) -->
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
