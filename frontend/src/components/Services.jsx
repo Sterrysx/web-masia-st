@@ -185,21 +185,21 @@ const servicesData = [
 function Services() {
     return (
         <section id="services" className="py-16 bg-gray-800">
-            {/* Bloque SEO (sin Helmet),
-          si deseas metaetiquetas, puedes agregarlas en tu index.html o layout principal.
-          Aquí mantenemos sólo el contenido textual orientado a SEO. */}
-
+            {/* Bloque SEO (sin Helmet): metaetiquetas se pueden agregar en el index.html o layout principal */}
             <div className="container mx-auto px-6">
                 <motion.div
                     className="text-center mb-12"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
                         Digitalización y automatización sin complicaciones
                     </h2>
-                    <p className="mt-2 text-yellow-500">- Especializados en Restauración -</p>
+                    <p className="mt-2 text-yellow-500">
+                        - Especializados en Restauración -
+                    </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -207,10 +207,14 @@ function Services() {
                         <motion.div
                             key={service.id}
                             className="bg-white text-gray-900 rounded-lg p-6 shadow-lg flex flex-col"
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.3 }}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            viewport={{ once: true }}
                         >
-                            <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                            <h3 className="text-2xl font-bold mb-2">
+                                {service.title}
+                            </h3>
                             <div className="mb-4">{service.icon}</div>
                             <ul className="list-none pl-0 mb-4 space-y-2">
                                 {service.features.map((feature, index) => (
@@ -219,7 +223,9 @@ function Services() {
                             </ul>
                             <button
                                 onClick={() => {
-                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                    document
+                                        .getElementById("contact")
+                                        ?.scrollIntoView({ behavior: "smooth" });
                                 }}
                                 className="mt-auto bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors"
                             >
@@ -229,8 +235,13 @@ function Services() {
                     ))}
                 </div>
 
-                {/* Sección de descarga */}
-                <div className="text-center mt-16">
+                <motion.div
+                    className="text-center mt-16"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                >
                     <h3 className="text-2xl py-3 mt-6 font-bold text-white mb-4">
                         Descarga toda la información de nuestros servicios
                     </h3>
@@ -242,7 +253,7 @@ function Services() {
                         <ArrowDownTrayIcon className="w-6 h-6 mr-2" />
                         Descargar PDF
                     </a>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

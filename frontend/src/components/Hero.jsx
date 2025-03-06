@@ -9,7 +9,7 @@ function Hero() {
                 className="text-5xl md:text-7xl font-thin uppercase text-center"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1, delay: 1.9 }} // Espera 1.9 segundos para iniciar
             >
                 Su Éxito Es <span className="text-yellow-500">Nuestro Compromiso.</span>
             </motion.h1>
