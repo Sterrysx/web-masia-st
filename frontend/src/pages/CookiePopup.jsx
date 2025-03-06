@@ -1,34 +1,33 @@
-// components/CookiePopup.jsx
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function CookiePopup() {
     const [showPopup, setShowPopup] = useState(false);
-    const location = useLocation(); // 📌 Detectamos en qué página está el usuario
+    const location = useLocation();
 
     useEffect(() => {
         const cookiesAccepted = localStorage.getItem("cookiesAccepted");
 
-        // 📌 Si ya aceptó las cookies, el popup nunca se muestra
-        if (cookiesAccepted) {
+        // Si ya se aceptaron las cookies o si estamos en la página de Política de Cookies, no mostramos el popup.
+        if (cookiesAccepted || location.pathname === "/politica-de-cookies") {
             setShowPopup(false);
             return;
         }
 
-        // 📌 Si está en la página de política de cookies, no mostramos el popup
-        if (location.pathname === "/politica-de-cookies") {
-            setShowPopup(false);
-        } else {
+        // Esperamos 3 segundos después de la animación inicial para mostrar el popup.
+        const timer = setTimeout(() => {
             setShowPopup(true);
-        }
-    }, [location.pathname]); // 📌 Se ejecuta cada vez que cambia la URL
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, [location.pathname]);
 
     const handleAcceptCookies = () => {
         localStorage.setItem("cookiesAccepted", "true");
         setShowPopup(false);
     };
 
-    if (!showPopup) return null; // No renderiza nada si ya se aceptaron las cookies o si está en "Política de Cookies"
+    if (!showPopup) return null;
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -38,12 +37,14 @@ export default function CookiePopup() {
                 </h2>
                 <p className="text-sm mb-4">
                     Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al aceptar,
-                    nos ayudas a ofrecerte un servicio mejor. Puedes leer más en nuestra
+                    nos ayudas a ofrecerte un servicio mejor. Puedes leer más en nuestra{" "}
                     <a
                         href="/politica-de-cookies"
-                        onClick={() => setShowPopup(false)} // 📌 Cierra el popup al hacer clic en el enlace
+                        onClick={() => setShowPopup(false)}
                         className="text-yellow-400 hover:underline"
-                    >  Política de Cookies</a>.
+                    >
+                        Política de Cookies
+                    </a>.
                 </p>
                 <button
                     onClick={handleAcceptCookies}
