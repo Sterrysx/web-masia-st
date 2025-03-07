@@ -48,7 +48,7 @@ export default function Animation() {
         }
     }, [progress]);
 
-    // Cuando ya no se muestra la animación, el componente no renderiza nada
+    // Si showAnimation es false, el componente deja de renderizarse
     if (!showAnimation) {
         return null;
     }
@@ -56,8 +56,8 @@ export default function Animation() {
     return (
         <div
             className={`fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center
-                  bg-black/90 z-50 transition-opacity duration-400 
-                  ${fadeOut ? "opacity-0" : "opacity-100"}`}
+                bg-black/90 z-50 transition-opacity duration-400
+                ${fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"}`}
         >
             {/* Logo con efecto scale */}
             <img
