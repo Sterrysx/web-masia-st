@@ -98,8 +98,11 @@ function MissionPhilosophy() {
                         <motion.div
                             key={section.id}
                             className="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex flex-col"
+                            initial={{ opacity: 0, y: -50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.5 }}
                             whileHover={{ scale: 1.03 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 1, delay: 0.2 }}
                         >
                             <img
                                 src={section.image}
@@ -107,11 +110,15 @@ function MissionPhilosophy() {
                                 className="w-full h-48 object-cover"
                             />
                             <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-2xl font-bold mb-4 text-gray-200">{section.title}</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-gray-200">
+                                    {section.title}
+                                </h3>
                                 <p className="flex-grow mb-4 text-gray-200">{section.text}</p>
                                 <button
                                     onClick={() => {
-                                        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                        document
+                                            .getElementById('contact')
+                                            ?.scrollIntoView({ behavior: 'smooth' });
                                     }}
                                     className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors"
                                 >

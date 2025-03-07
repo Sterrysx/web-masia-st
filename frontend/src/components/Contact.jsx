@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import backgroundImage from '../assets/business2.jpg'; // Imagen de fondo
+import { motion } from 'framer-motion';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -47,7 +48,13 @@ export default function ContactPage() {
             className="min-h-screen flex py-24 items-center justify-center bg-gray-600 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <div className="bg-black bg-opacity-70 p-8 mt-36 rounded-lg shadow-lg max-w-md w-full z-30">
+            <motion.div
+                className="bg-black bg-opacity-70 p-8 mt-36 rounded-lg shadow-lg max-w-md w-full z-30"
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 1, delay: 0.2 }}
+            >
                 {/* Encabezado visible para SEO y usuarios */}
                 <h2 className="text-2xl font-semibold text-gray-100 text-center mb-6">
                     Contacto
@@ -105,7 +112,7 @@ export default function ContactPage() {
                 {statusMessage && (
                     <p className="mt-4 text-center text-sm text-yellow-400">{statusMessage}</p>
                 )}
-            </div>
+            </motion.div>
         </div>
     );
 }
