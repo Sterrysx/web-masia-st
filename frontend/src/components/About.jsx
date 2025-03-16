@@ -1,92 +1,100 @@
-// components/About.jsx
-import React from 'react';
-import { motion } from 'framer-motion';
-import logoImage from '../assets/LOGO/LOGO-STELLAR-LLETRES-PNG-BLANC.png'; // Imagen del logo
-import upcImage from '../assets/UPC.png'; // Imagen de la UPC
+import React from "react";
+import teamImage from "../assets/team3.jpg";
+import restImage from "../assets/rest-1.jpg";
+import AnimatedText from "./AnimatedText"; // Asegúrate de que la ruta sea correcta
 
-function About() {
+export default function About() {
     return (
-        <section id="about" className="py-20 text-gray-200 bg-pattern-dots bg-gray-900">
-            {/* Primera sección: Logo a la derecha, texto a la izquierda */}
-            <div className="container mx-auto px-6 flex flex-col md:flex-row items-center mb-16 gap-10">
-                <motion.div
-                    className="md:w-1/2 text-left"
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <h2 className="text-5xl font-extrabold uppercase mb-6 text-grey-200 border-b-4 inline-block pb-2">
-                        Quiénes Somos
-                    </h2>
-                    <p className="text-lg leading-relaxed text-gray-300 my-6">
-                        En <strong className="text-white">Stellar Progress</strong>, creemos en el poder de la
-                        digitalización para transformar negocios y hacerlos más competitivos en un mundo cada
-                        vez más tecnológico. Somos <strong className="text-yellow-400">Sergi y Oriol</strong>,
-                        dos jóvenes emprendedores con formación en{' '}
-                        <strong className="text-white">Ingeniería Industrial</strong> e{' '}
-                        <strong className="text-white">Ingeniería Informática</strong>, apasionados por la
-                        tecnología y su impacto en la sociedad. Nuestra misión es clara:{' '}
-                        <strong className="text-yellow-400">
-                            ayudar a pequeños comercios y negocios de restauración a dar el salto digital
-                        </strong>
-                        , compitiendo de igual a igual con las grandes cadenas.
+        <section id="about" className="w-full bg-white">
+            {/* Sección 1: "Gastronomía" */}
+            <div className="w-full py-16 px-8 text-center">
+                <AnimatedText>
+                    <p className="text-sm uppercase tracking-wider text-gray-500 mb-2">
+                        SOBRE NOSOTROS
                     </p>
-                </motion.div>
-
-                <motion.div
-                    className="md:w-1/2 flex justify-center"
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <img
-                        src={logoImage}
-                        alt="Stellar Progress Logo"
-                        className="w-64 md:w-80 lg:w-[400px]"
-                    />
-                </motion.div>
+                </AnimatedText>
+                <AnimatedText>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        Gastronomía
+                    </h2>
+                </AnimatedText>
+                <AnimatedText>
+                    <p className="text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto">
+                        Nuestro restaurante se enorgullece de ofrecer una propuesta culinaria basada en productos frescos de primera calidad. Cada ingrediente es cuidadosamente seleccionado, trabajando en estrecha colaboración con proveedores locales para garantizar la máxima frescura y sabor en cada plato. La carta combina recetas tradicionales con toques de vanguardia, reflejando nuestro compromiso constante con la innovación gastronómica y la excelencia en cada detalle.
+                    </p>
+                </AnimatedText>
+                <AnimatedText>
+                    <button className="border border-gray-800 px-6 py-2 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-300">
+                        Más información
+                    </button>
+                </AnimatedText>
             </div>
 
-            {/* Segunda sección: Texto a la izquierda, imagen UPC a la derecha */}
-            <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-10">
-                <motion.div
-                    className="md:w-1/2 text-left"
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <p className="text-lg leading-relaxed text-gray-300">
-                        <strong className="text-white">Stellar Progress</strong> nació en el entorno de la{' '}
-                        <strong className="text-yellow-400">Universitat Politècnica de Catalunya (UPC)</strong>,
-                        donde dimos forma a nuestra idea y la convertimos en un proyecto real. La formación
-                        técnica y el acceso a herramientas avanzadas nos permitieron desarrollar una solución
-                        adaptada a las necesidades de los pequeños negocios, combinando innovación y facilidad
-                        de uso.
-                    </p>
-                    <p className="text-lg leading-relaxed mt-4 text-gray-300">
-                        Sabemos que cada comercio tiene su propia identidad y desafíos, por eso trabajamos para
-                        ofrecer herramientas digitales que no solo faciliten la gestión, sino que impulsen su
-                        crecimiento de manera sostenible y accesible. Creemos en la tecnología como un medio
-                        para fortalecer el tejido comercial local, creando un equilibrio entre la tradición y la
-                        innovación.{' '}
-                        <strong className="text-yellow-400">
-                            Nuestro compromiso es acompañar a cada negocio en su proceso de digitalización, con
-                            soluciones efectivas, cercanas y pensadas para su éxito a largo plazo.
-                        </strong>
-                    </p>
-                </motion.div>
+            {/* Sección 2: "Nuestro Equipo" */}
+            <div className="w-full flex flex-col md:flex-row items-stretch">
+                <div className="md:w-1/2 aspect-w-4 aspect-h-3 overflow-hidden">
+                    <img
+                        src={teamImage}
+                        alt="Nuestro Equipo"
+                        className="w-full h-full object-cover animate-zoomInOut"
+                    />
+                </div>
+                <div className="md:w-1/2 p-8 flex flex-col justify-center text-center md:text-left">
+                    <AnimatedText>
+                        <p className="text-sm uppercase tracking-wider text-gray-500 mb-2">
+                            SOBRE NOSOTROS
+                        </p>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                            Nuestro Equipo
+                        </h2>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <p className="text-gray-600 mb-6 leading-relaxed">
+                            El equipo de Sommelier está liderado por una pareja de emprendedores con una gran pasión por la restauración y la hospitalidad. Gracias a su dedicación y visión, han logrado formar un grupo de profesionales compuesto por cocineros, camareros y sumilleres que trabajan en armonía para ofrecer una experiencia inigualable al cliente. La colaboración y el buen ambiente de trabajo se perciben en cada servicio, haciendo que nuestros visitantes se sientan como en casa.
+                        </p>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <button className="border border-gray-800 px-6 py-2 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-300">
+                            Más información
+                        </button>
+                    </AnimatedText>
+                </div>
+            </div>
 
-                <motion.div
-                    className="md:w-1/2 flex justify-center"
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <img src={upcImage} alt="UPC Logo" className="w-56 md:w-72 lg:w-[200px]" />
-                </motion.div>
+            {/* Sección 3: "Nuestra Historia" */}
+            <div className="w-full flex flex-col md:flex-row items-stretch">
+                <div className="md:w-1/2 p-8 order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
+                    <AnimatedText>
+                        <p className="text-sm uppercase tracking-wider text-gray-500 mb-2">
+                            SOBRE NOSOTROS
+                        </p>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                            Nuestra Historia
+                        </h2>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <p className="text-gray-600 mb-6 leading-relaxed">
+                            La historia de Sommelier se remonta a la determinación de Laura y Miquel, una joven pareja que, con poco más de veinte años, decidió embarcarse en la aventura de la restauración. Su entusiasmo por la cocina y el deseo de compartir su pasión con el mundo los impulsaron a abrir las puertas de un pequeño local. Con esfuerzo y perseverancia, fueron ganándose la confianza de la comunidad, ampliando su propuesta gastronómica y formando un equipo comprometido. Hoy en día, Sommelier es el resultado de aquella ilusión temprana convertida en una realidad que inspira a todos los que visitan el restaurante.
+                        </p>
+                    </AnimatedText>
+                    <AnimatedText>
+                        <button className="border border-gray-800 px-6 py-2 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-300">
+                            Más información
+                        </button>
+                    </AnimatedText>
+                </div>
+                <div className="md:w-1/2 aspect-w-4 aspect-h-3 overflow-hidden order-1 md:order-2">
+                    <img
+                        src={restImage}
+                        alt="Nuestra Historia"
+                        className="w-full h-full object-cover animate-zoomInOut"
+                    />
+                </div>
             </div>
         </section>
     );
 }
-
-export default About;

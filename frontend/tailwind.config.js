@@ -7,7 +7,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        merriweather: ['Merriweather', 'serif'], // Se define la fuente con alias 'merriweather'
+        plus: ['Plus Jakarta Sans', 'serif'], // Se define la fuente con alias 'merriweather'
+      },
+      colors: {
+        brown1: "#6d3329",  // Nombre personalizado para el color
+      },
+    },
   },
   plugins: [],
 };

@@ -3,10 +3,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet'; // <--- IMPORTANTE
 import Navbar from '../components/Navbar';
 import BackgroundAnimation from '../components/BackgroundAnimation';
+import Carrousel from '../components/carrousel';
 import Hero from '../components/Hero';
-import Services from '../components/Services';
 import About from '../components/About';
-import MissionPhilosophy from '../components/MissionPhilosophy';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 
@@ -53,15 +52,14 @@ function Home() {
                 </script>
             </Helmet>
 
-            <div className="relative bg-gray-900 text-white">
+            {/* Se añade la clase font-merriweather para aplicar la fuente en toda la página */}
+            <div className="relative bg-gray-900 text-white font-plus">
                 {/* Animación de fondo */}
                 <BackgroundAnimation />
                 <Navbar />
-                <main className="pt-16">
-                    <Hero />
-                    <Services />
+                <main className="pt-0">
+                    <Carrousel />
                     <About />
-                    <MissionPhilosophy />
                     <Contact />
                 </main>
                 <Footer />
