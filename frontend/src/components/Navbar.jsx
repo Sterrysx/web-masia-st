@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { NavLink, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +30,16 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-            isHome && isAtTop
-                ? "bg-gradient-to-b from-neutral-900 to-transparent"
-                : "bg-neutral-900"
-        }`}>
+        <motion.nav
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.9 }}
+            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+                isHome && isAtTop
+                    ? "bg-gradient-to-b from-neutral-900 to-transparent"
+                    : "bg-neutral-900"
+            }`}
+        >
             <div className="container mx-auto flex justify-between items-center px-6 py-4">
                 <div>
                     <NavLink to="/">
@@ -57,7 +63,11 @@ function Navbar() {
                                     Inicio
                                 </Link>
                             ) : (
-                                <NavLink to="/" onClick={closeMenu} className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110">
+                                <NavLink
+                                    to="/"
+                                    onClick={closeMenu}
+                                    className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110"
+                                >
                                     Inicio
                                 </NavLink>
                             )}
@@ -85,13 +95,21 @@ function Navbar() {
                                     Nosotros
                                 </Link>
                             ) : (
-                                <NavLink to="/about" onClick={closeMenu} className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110">
+                                <NavLink
+                                    to="/about"
+                                    onClick={closeMenu}
+                                    className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110"
+                                >
                                     Nosotros
                                 </NavLink>
                             )}
                         </li>
                         <li>
-                            <button type="button" onClick={() => { /* Sin acción */ }} className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110">
+                            <button
+                                type="button"
+                                onClick={() => { /* Sin acción */ }}
+                                className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110"
+                            >
                                 Reservas
                             </button>
                         </li>
@@ -108,7 +126,11 @@ function Navbar() {
                                     Contacto
                                 </Link>
                             ) : (
-                                <NavLink to="/contact" onClick={closeMenu} className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110">
+                                <NavLink
+                                    to="/contact"
+                                    onClick={closeMenu}
+                                    className="inline-block cursor-pointer transition-transform duration-300 hover:scale-110"
+                                >
                                     Contacto
                                 </NavLink>
                             )}
@@ -116,7 +138,10 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-2xl text-white transition-transform duration-300 hover:scale-110">
+                    <button
+                        onClick={toggleMenu}
+                        className="text-2xl text-white transition-transform duration-300 hover:scale-110"
+                    >
                         {isOpen ? <FaTimes /> : <FaBars />}
                     </button>
                 </div>
@@ -196,7 +221,7 @@ function Navbar() {
                     </ul>
                 </div>
             )}
-        </nav>
+        </motion.nav>
     );
 }
 

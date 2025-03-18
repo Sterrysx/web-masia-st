@@ -64,8 +64,8 @@ export default function Animation() {
             {/* Barra de carga de extremo a extremo */}
             <div className="w-full h-0.5 bg-transparent overflow-hidden mt-6">
                 <div
-                    className="h-full bg-gray-100 transition-all duration-200"
-                    style={{ width: `${progress}%` }}
+                    className="h-full bg-gray-100"
+                    style={{ width: `${progress}%`, transition: 'width 15ms linear' }}
                 />
             </div>
         </div>
