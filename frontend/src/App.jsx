@@ -26,7 +26,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/aviso-legal" element={<AvisoLegal />} />
                     <Route path="/politica-de-privacidad" element={<Privacidad />} />
-                    <Route path="/politica-de-cookies" element={<Cookies />} />
+                    <Route path="/cookies" element={<Cookies />} />
                 </Routes>
             </Router>
         </>

@@ -4,6 +4,8 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import LogoImage from '../assets/logoviny.png'; // <- Import del logo en imagen
+import carta from '../assets/carta.pdf';
+
 
 export default function Navbar() {
     const [isOpen, setIsOpen]   = useState(false);
@@ -34,8 +36,8 @@ export default function Navbar() {
             initial={{ y: -120 }}
             animate={{ y: showNav ? 0 : -120 }}
             transition={{ duration: 0.3 }}
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-                isHome && isAtTop ? 'bg-transparent' : 'bg-neutral-900'
+            className={`fixed top-0 left-0 w-full z-40 transition-colors duration-300 ${
+                isHome && isAtTop ? 'bg-transparent' : 'bg-nav'
             }`}
         >
             <div className="container mx-auto flex items-center justify-between h-20 px-6 md:px-8">
@@ -43,16 +45,15 @@ export default function Navbar() {
                     <>
                         {/* Logo a la izquierda */}
                         <NavLink to="/" onClick={closeMenu}>
-                            {/*
-                            <span className="text-2xl font-bold text-gray-200">
-                                Sommelier Restaurant
+                            <span className="text-2xl md:text-3xl font-medium text-gray-100 font-lavish">
+                                Restaurant La Masia
                             </span>
-                            */}
+                            {/*
                             <img
                                 src={LogoImage}
                                 alt="Sommelier Restaurant"
-                                className="h-16 w-auto"
-                            />
+                                className="h-10 w-auto"
+                            />*/}
                         </NavLink>
 
                         {/* Menú escritorio */}
@@ -68,18 +69,18 @@ export default function Navbar() {
                                     onClick={closeMenu}
                                     className={({ isActive }) =>
                                         `uppercase ${
-                                            isActive ? activeClass : 'text-gray-300'
-                                        } hover:text-gray-400`
+                                            isActive ? activeClass : 'text-gray-100'
+                                        } hover:text-dark-green`
                                     }
                                 >
                                     {label}
                                 </NavLink>
                             ))}
                             <a
-                                href="/ruta/a/la-carta.pdf"
+                                href={carta}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="uppercase text-gray-300 hover:text-gray-400"
+                                className="uppercase text-gray-100 hover:text-dark-green"
                             >
                                 La Carta
                             </a>
@@ -130,16 +131,16 @@ export default function Navbar() {
                             onClick={closeMenu}
                             className="absolute left-1/2 transform -translate-x-1/2"
                         >
-                            {/*
-                            <span className="text-2xl font-bold text-gray-200">
-                                Sommelier Restaurant
+
+                            <span className="text-2xl font-medium text-gray-100 font-lavish">
+                                La Masia
                             </span>
-                            */}
+                            {/*
                             <img
                                 src={LogoImage}
                                 alt="Sommelier Restaurant"
                                 className="h-10 w-auto"
-                            />
+                            />*/}
                         </NavLink>
                     </>
                 )}
@@ -159,9 +160,9 @@ export default function Navbar() {
                                     to={to}
                                     onClick={closeMenu}
                                     className={({ isActive }) =>
-                                        `block uppercase text-lg ${
+                                        `block uppercase text-md ${
                                             isActive ? activeClass : 'text-gray-300'
-                                        } hover:text-gray-400`
+                                        } hover:text-fondo`
                                     }
                                 >
                                     {label}
@@ -170,10 +171,10 @@ export default function Navbar() {
                         ))}
                         <li>
                             <a
-                                href="/ruta/a/la-carta.pdf"
+                                href={carta}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block uppercase text-lg text-gray-300 hover:text-gray-400"
+                                className="block uppercase text-md text-gray-300 hover:text-fondo"
                             >
                                 La Carta
                             </a>
@@ -182,7 +183,7 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 disabled
-                                className="block uppercase text-lg text-gray-500 cursor-not-allowed"
+                                className="block uppercase text-md text-gray-500 cursor-not-allowed"
                             >
                                 Reservas
                             </button>

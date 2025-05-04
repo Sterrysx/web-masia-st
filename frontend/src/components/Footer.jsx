@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="relative bg-neutral-800 text-gray-300">
+        <footer className="relative bg-footer text-gray-300 pt-8">
             {/* Separador de tres zonas */}
             <svg
                 className="pointer-events-none absolute -top-24 left-0 w-full h-24"
@@ -14,96 +14,115 @@ export default function Footer() {
                 preserveAspectRatio="none"
             >
                 <path
-                    d="
-            M0,40
-            C350,0 350,0 1000,140
-            C750,110 1050,90 1200,35
-            V180 H0 Z
-          "
-                    fill="rgba(38,38,38,255)"
+                    d="M0,40 C350,0 350,0 1000,140 C750,110 1050,90 1200,35 V180 H0 Z"
+                    fill="rgba(145,82,75,1)"
                 />
                 <path
-                    d="
-            M0,60
-            C150,20 350,20 600,60
-            C850,100 1050,100 1200,60
-            V120 H0 Z
-          "
-                    fill="rgba(38,38,38,255)"
+                    d="M0,60 C150,20 350,20 600,60 C850,100 1050,100 1200,60 V120 H0 Z"
+                    fill="rgba(145,82,75,1)"
                 />
             </svg>
 
-            {/* Contenido del footer */}
-            <div className="">
-                <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Columna 1 */}
-                    <div className="space-y-4">
-                        <h2 className="text-2xl font-bold text-white">Sommelier Restaurant</h2>
-                        <p className="text-gray-400">
-                            Cocina de mercado con productos frescos de proximidad en Granollers.
-                        </p>
-                    </div>
-
-                    {/* Columna 2 */}
-                    <div className="space-y-3">
-                        <h3 className="text-xl font-semibold text-white">Ubicación</h3>
-                        <p>Passeig de la Muntanya, 2</p>
-                        <p>08402 Granollers (Barcelona)</p>
-                        <p className="flex items-center">
-                            Tel: <span className="ml-2">938 41 85 80</span>
-                        </p>
-                        <Link
-                            to="/"
-                            className="inline-block mt-2 text-white underline hover:text-gray-300"
-                        >
-                            Ver mapa
-                        </Link>
-                    </div>
-
-                    {/* Columna 3 */}
-                    <div className="space-y-3">
-                        <h3 className="text-xl font-semibold text-white">Horario</h3>
-                        <p>
-                            <span className="font-medium">De lunes a viernes:</span><br />
-                            07:00 a 17:00
-                        </p>
-                        <p>
-                            <span className="font-medium">Viernes:</span><br />
-                            20:00 a 00:00
-                        </p>
-                        <p>
-                            <span className="font-medium">Sábados:</span><br />
-                            10:00 a 17:00
-                        </p>
-                    </div>
-
-                    {/* Columna 4 */}
-                    <div className="space-y-4">
-                        <h3 className="text-xl font-semibold text-white">Contacto</h3>
+            {/* Contenido principal */}
+            <div className="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                {/* Columna 1 */}
+                <div className="space-y-2">
+                    <h2 className="text-2xl sm:text-3xl font-lavish font-medium text-gray-300">
+                        La Masia
+                    </h2>
+                    <p className="text-sm">
+                        Cocina clásica catalana.
+                    </p>
+                    <div className="flex items-center space-x-2">
+                        <FaInstagram className="text-gray-300 text-base" />
                         <a
-                            href="mailto:info@sommelier.com"
-                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-700 transition"
-                        >
-                            Email
-                        </a>
-                        <a
-                            href="tel:938418580"
-                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-700 transition"
-                        >
-                            Teléfono: 93 841 85 80
-                        </a>
-                        <button className="w-full bg-white text-neutral-900 py-2 uppercase hover:bg-gray-400 transition">
-                            Reservar
-                        </button>
-                        <a
-                            href="https://www.instagram.com/sommelierrestaurant"
+                            href="https://instagram.com/restaurantmasia"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center mt-2 space-x-2 text-white hover:text-gray-300 transition"
+                            className="text-sm hover:text-white"
                         >
-                            <FaInstagram /> <span>Instagram</span>
+                            @restaurantmasia
                         </a>
                     </div>
+                </div>
+
+                {/* Columna 2: Ubicación */}
+                <div className="space-y-2">
+                    <h3 className="text-xl sm:text-2xl font-playfair text-gray-300">
+                        Ubicación
+                    </h3>
+                    <p className="text-sm">Cami de la Pineda, 98</p>
+                    <p className="text-sm">Vacarisses, 08233 (Barcelona)</p>
+                    <p className="text-sm">Tel: +34 683 379 643</p>
+                    <p className="text-sm">Email: info@restaurantmasia.cat</p>
+                    <Link
+                        to="/"
+                        className="inline-block mt-1 text-sm underline hover:text-white"
+                    >
+                        Ver mapa
+                    </Link>
+                </div>
+
+                {/* Columna 3: Horario */}
+                <div className="space-y-2">
+                    <h3 className="text-xl sm:text-2xl font-playfair text-gray-300">
+                        Horario
+                    </h3>
+                    <p className="text-sm">
+                        <span className="font-medium">Lun–Vie:</span><br />13:00–16:00 &amp; 20:00–23:00
+                    </p>
+                    <p className="text-sm">
+                        <span className="font-medium">Sáb:</span><br />13:00–23:00
+                    </p>
+                    <p className="text-sm">
+                        <span className="font-medium">Dom:</span><br />13:00–17:00
+                    </p>
+                </div>
+
+                {/* Columna 4: Acciones */}
+                <div className="space-y-2">
+                    <h3 className="text-xl sm:text-2xl font-playfair text-gray-300">
+                        Contacto
+                    </h3>
+                    <Link
+                        to="/contact"
+                        className="block border border-gray-300 text-center py-2 text-sm uppercase hover:bg-gray-300 hover:text-dark-green transition"
+                    >
+                        Envía un mensaje
+                    </Link>
+                    <a
+                        href="mailto:info@restaurantmasia.cat"
+                        className="block border border-gray-300 text-center py-2 text-sm uppercase hover:bg-gray-300 hover:text-dark-green transition"
+                    >
+                        Email directo
+                    </a>
+                    <a
+                        href="tel:+34683379643"
+                        className="block border border-gray-300 text-center py-2 text-sm uppercase hover:bg-gray-300 hover:text-dark-green transition"
+                    >
+                        Llamar ahora
+                    </a>
+                </div>
+            </div>
+
+            {/* Pie legal a dos líneas, responsive */}
+            <div className="bg-footer text-sm text-center py-6">
+                <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between space-y-2 sm:space-y-0">
+                    <p className="text-light-gray">
+                        © 2025 La Masia. Todos los derechos reservados.
+                        <span className="ml-1">Developed by Stellar Progress</span>
+                    </p>
+                    <nav className="space-x-4">
+                        <Link to="/aviso-legal" className="hover:underline">
+                            Aviso Legal
+                        </Link>
+                        <Link to="/politica-de-privacidad" className="hover:underline">
+                            Política de Privacidad
+                        </Link>
+                        <Link to="/cookies" className="hover:underline">
+                            Política de Cookies
+                        </Link>
+                    </nav>
                 </div>
             </div>
         </footer>

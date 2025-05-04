@@ -49,24 +49,24 @@ export default function Animation() {
     return (
         <div
             className={`fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center
-                bg-black/90 z-50 transition-opacity duration-500
+                bg-black z-50 transition-opacity duration-500
                 ${fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"}`}
         >
             {/* Logo en texto (desactivado) */}
-            {/*
+            {/**/}
             <h1
-                className="text-3xl sm:text-5xl font-bold text-white py-10 text-center transition-transform duration-1000 ease-out"
+                className="text-3xl sm:text-5xl font-medium font-lavish text-white py-10 text-center transition-transform duration-1000 ease-out"
                 style={{
                     transform: `scale(${titleScale})`,
                     opacity: titleOpacity,
                     textShadow: "0 0 20px rgba(0, 0, 0, 0.8)"
                 }}
             >
-                Sommelier
+                Restaurant la Masia
             </h1>
-            */}
 
-            {/* Logo en imagen (activo) */}
+
+            {/* Logo en imagen (activo)
             <img
                 src={LogoImage}
                 alt="Sommelier"
@@ -76,7 +76,7 @@ export default function Animation() {
                     opacity: titleOpacity,
                     filter: "drop-shadow(0 0 20px rgba(0,0,0,0.8))"
                 }}
-            />
+            />*/}
 
             {/* Barra de carga de extremo a extremo */}
             <div className="w-full h-0.5 bg-transparent overflow-hidden mt-6">
