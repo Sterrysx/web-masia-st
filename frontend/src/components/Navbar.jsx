@@ -87,7 +87,7 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 disabled
-                                className="uppercase text-gray-500 cursor-not-allowed"
+                                className="uppercase text-gray-100 hover:text-dark-green "
                             >
                                 Reservas
                             </button>
@@ -183,7 +183,7 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 disabled
-                                className="block uppercase text-md text-gray-500 cursor-not-allowed"
+                                className="block uppercase text-md text-gray-100 hover:text-fondo"
                             >
                                 Reservas
                             </button>
