@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { useNavigationType } from 'react-router-dom';
 import Img1 from '../assets/Img1.jpg';
 import Img4 from '../assets/Img4.jpg';
-import LogoImage from '../assets/logoviny.png'; // <- Descomenta para usar logo en imagen
+import LogoImage from '../assets/logoviny.png';
 
 export default function Carrousel() {
     const images = [Img1, Img4];
     const [current, setCurrent] = useState(0);
-    const navigationType = useNavigationType(); // 'PUSH' vs 'POP'
+    const navigationType = useNavigationType();
 
     // Delays según tipo de navegación
     const titleDelay = navigationType === 'PUSH' ? 0 : 1.9;
@@ -25,7 +25,7 @@ export default function Carrousel() {
     return (
         <section
             id="carrousel"
-            className="relative w-full z-20 h-screen overflow-hidden bg-black flex flex-col items-center justify-center"
+            className="relative w-full z-20 h-screen overflow-hidden bg-black flex flex-col items-center justify-center px-4 sm:px-6 md:px-8"
         >
             {images.map((img, index) => (
                 <div
@@ -45,38 +45,51 @@ export default function Carrousel() {
                 </div>
             ))}
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 space-y-6 w-full text-center px-4 sm:px-6">
-                {/* Logo en formato texto (activo)
-                <motion.h1
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center py-12 px-6 md:px-12"
-                    style={{ textShadow: '0 0 20px rgba(0, 0, 0, 0.8)' }}
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: titleDelay }}
-                >
-                    Sommelier
-                </motion.h1>
-                */}
-
-                {/* Logo en formato imagen (inactivo) */}
-
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 space-y-4 sm:space-y-6 md:space-y-8 text-center">
+                {/* Logo imagen */}
                 <motion.img
                     src={LogoImage}
                     alt="Sommelier"
-                    className="h-16 w-auto py-12"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: titleDelay }}
+                    className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto drop-shadow-2xl"
+                    initial={{ opacity: 0, y: -50, scale: 0.8 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 1, delay: titleDelay, ease: 'easeOut' }}
                 />
 
-
+                {/* Botón Reservar Mesa */}
                 <motion.button
-                    className="transform hover:scale-105 transition-transform duration-300 mt-8 text-white text-shadow uppercase py-4 text-base font-light px-10 border border-white bg-black bg-opacity-25 hover:bg-white hover:bg-opacity-15"
+                    className="
+                        mt-4 sm:mt-6 md:mt-8
+                        transform hover:scale-105 transition-transform duration-300
+                        uppercase font-light
+                        px-6 sm:px-8 md:px-10 lg:px-12
+                        py-2 sm:py-3 md:py-4
+                        text-white bg-black bg-opacity-55 border border-white
+                        hover:bg-white hover:text-black hover:bg-opacity-75 hover:border hover:border-black
+                    "
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: buttonDelay }}
                 >
                     Reservar Mesa
+                </motion.button>
+
+                {/* Botón Ver Carta */}
+                <motion.button
+                    className="
+                        mt-2
+                        transform hover:scale-105 transition-transform duration-300
+                        uppercase font-light
+                        px-6 sm:px-8 md:px-10 lg:px-12
+                        py-2 sm:py-3 md:py-4
+                        text-black bg-white bg-opacity-75 border border-black
+                        hover:bg-black hover:text-white hover:bg-opacity-55
+                    "
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: buttonDelay + 0.2 }}
+                >
+                    Ver Carta
                 </motion.button>
             </div>
         </section>

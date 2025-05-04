@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import LogoImage from '../assets/logoviny.png'; // <- Import del logo en imagen
 
 export default function Navbar() {
     const [isOpen, setIsOpen]   = useState(false);
@@ -42,9 +43,16 @@ export default function Navbar() {
                     <>
                         {/* Logo a la izquierda */}
                         <NavLink to="/" onClick={closeMenu}>
-              <span className="text-2xl font-bold text-gray-200">
-                Sommelier Restaurant
-              </span>
+                            {/*
+                            <span className="text-2xl font-bold text-gray-200">
+                                Sommelier Restaurant
+                            </span>
+                            */}
+                            <img
+                                src={LogoImage}
+                                alt="Sommelier Restaurant"
+                                className="h-16 w-auto"
+                            />
                         </NavLink>
 
                         {/* Menú escritorio */}
@@ -122,9 +130,16 @@ export default function Navbar() {
                             onClick={closeMenu}
                             className="absolute left-1/2 transform -translate-x-1/2"
                         >
-              <span className="text-2xl font-bold text-gray-200 ">
-                Sommelier Restaurant
-              </span>
+                            {/*
+                            <span className="text-2xl font-bold text-gray-200">
+                                Sommelier Restaurant
+                            </span>
+                            */}
+                            <img
+                                src={LogoImage}
+                                alt="Sommelier Restaurant"
+                                className="h-10 w-auto"
+                            />
                         </NavLink>
                     </>
                 )}

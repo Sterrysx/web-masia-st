@@ -1,10 +1,11 @@
 // src/components/Footer.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="relative bg-neutral-900 text-gray-300">
+        <footer className="relative bg-neutral-800 text-gray-300">
             {/* Separador de tres zonas */}
             <svg
                 className="pointer-events-none absolute -top-24 left-0 w-full h-24"
@@ -12,7 +13,6 @@ export default function Footer() {
                 viewBox="0 0 1200 120"
                 preserveAspectRatio="none"
             >
-                {/* 1) Banda semitransparente (70 %): empieza a Y=40 */}
                 <path
                     d="
             M0,40
@@ -20,10 +20,8 @@ export default function Footer() {
             C750,110 1050,90 1200,35
             V180 H0 Z
           "
-                    fill="rgba(31,41,55,0.7)"
+                    fill="rgba(38,38,38,255)"
                 />
-
-                {/* 2) Banda opaca: misma forma, 20 px más baja (empieza a Y=60) */}
                 <path
                     d="
             M0,60
@@ -31,12 +29,12 @@ export default function Footer() {
             C850,100 1050,100 1200,60
             V120 H0 Z
           "
-                    fill="rgba(23,23,23,255)"
+                    fill="rgba(38,38,38,255)"
                 />
             </svg>
 
             {/* Contenido del footer */}
-            <div className="pt-24">
+            <div className="">
                 <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Columna 1 */}
                     <div className="space-y-4">
@@ -56,7 +54,7 @@ export default function Footer() {
                         </p>
                         <Link
                             to="/"
-                            className="inline-block mt-2 text-yellow-500 underline hover:text-yellow-400"
+                            className="inline-block mt-2 text-white underline hover:text-gray-300"
                         >
                             Ver mapa
                         </Link>
@@ -84,19 +82,27 @@ export default function Footer() {
                         <h3 className="text-xl font-semibold text-white">Contacto</h3>
                         <a
                             href="mailto:info@sommelier.com"
-                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-800 transition"
+                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-700 transition"
                         >
                             Email
                         </a>
                         <a
                             href="tel:938418580"
-                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-800 transition"
+                            className="block border border-gray-500 text-center py-2 uppercase hover:bg-gray-700 transition"
                         >
                             Teléfono: 93 841 85 80
                         </a>
-                        <button className="w-full bg-yellow-500 text-white py-2 uppercase hover:bg-yellow-600 transition">
+                        <button className="w-full bg-white text-neutral-900 py-2 uppercase hover:bg-gray-400 transition">
                             Reservar
                         </button>
+                        <a
+                            href="https://www.instagram.com/sommelierrestaurant"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center mt-2 space-x-2 text-white hover:text-gray-300 transition"
+                        >
+                            <FaInstagram /> <span>Instagram</span>
+                        </a>
                     </div>
                 </div>
             </div>

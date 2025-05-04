@@ -47,14 +47,14 @@ export default function About() {
                         </p>
                     </AnimatedText>
                     <AnimatedText>
-                        <button className="mt-4 px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium rounded-lg hover:bg-yellow-500 hover:text-white transition-colors">
+                        <button className="mt-4 px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium  hover:bg-yellow-500 hover:text-white transition-colors">
                             Ver Carta
                         </button>
                     </AnimatedText>
                 </div>
 
                 {/* Sección Nuestro Equipo */}
-                <div className="max-w-6xl mx-auto grid md:grid-cols-2 bg-white rounded-xl shadow-xl overflow-hidden">
+                <div className="max-w-6xl mx-auto grid md:grid-cols-2 bg-white rounded-sm shadow-xl overflow-hidden">
                     <div className="h-80 md:h-auto overflow-hidden">
                         <img
                             src={teamImage}
@@ -79,7 +79,7 @@ export default function About() {
                             </p>
                         </AnimatedText>
                         <AnimatedText>
-                            <button className="mt-4 px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium rounded-lg hover:bg-yellow-500 hover:text-white transition-colors">
+                            <button className="mt-4 px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium  hover:bg-yellow-500 hover:text-white transition-colors">
                                 Conócenos Más
                             </button>
                         </AnimatedText>
@@ -106,7 +106,7 @@ export default function About() {
                         </AnimatedText>
 
                     </div>
-                    <div className="h-80 md:h-auto overflow-hidden mb-32 rounded-xl shadow-lg">
+                    <div className="h-80 md:h-auto overflow-hidden mb-32 rounded-sm shadow-lg">
                         <img
                             src={restImage}
                             alt="Nuestra Historia"

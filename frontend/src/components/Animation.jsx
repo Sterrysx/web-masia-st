@@ -1,4 +1,6 @@
+// src/components/Animation.jsx
 import React, { useEffect, useState } from "react";
+import LogoImage from "../assets/logoviny.png"; // <- Importación activa del logo en imagen
 
 export default function Animation() {
     const [progress, setProgress] = useState(0);
@@ -50,6 +52,8 @@ export default function Animation() {
                 bg-black/90 z-50 transition-opacity duration-500
                 ${fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"}`}
         >
+            {/* Logo en texto (desactivado) */}
+            {/*
             <h1
                 className="text-3xl sm:text-5xl font-bold text-white py-10 text-center transition-transform duration-1000 ease-out"
                 style={{
@@ -60,6 +64,19 @@ export default function Animation() {
             >
                 Sommelier
             </h1>
+            */}
+
+            {/* Logo en imagen (activo) */}
+            <img
+                src={LogoImage}
+                alt="Sommelier"
+                className="h-16 sm:h-24 md:h-32 lg:h-40 w-auto mb-10 transition-transform duration-1000 ease-out"
+                style={{
+                    transform: `scale(${titleScale})`,
+                    opacity: titleOpacity,
+                    filter: "drop-shadow(0 0 20px rgba(0,0,0,0.8))"
+                }}
+            />
 
             {/* Barra de carga de extremo a extremo */}
             <div className="w-full h-0.5 bg-transparent overflow-hidden mt-6">
