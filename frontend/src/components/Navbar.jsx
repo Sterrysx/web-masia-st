@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import LogoImage from '../assets/logoviny.png'; // <- Import del logo en imagen
-import carta from '../assets/carta.pdf';
+import carta from '../assets/Carta.pdf';
 
 
 export default function Navbar() {

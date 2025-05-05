@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ft7 from '../assets/7.jpeg';
-import carta from '../assets/carta.pdf';
+import carta from '../assets/Carta.pdf';
 
 
 export default function Carrousel() {

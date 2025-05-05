@@ -9,7 +9,7 @@ import ft1 from '../assets/12.jpg';
 import ft2 from '../assets/team3.jpg';
 import ft3 from '../assets/14.jpg';
 import ft4 from '../assets/8.jpg';
-import carta from '../assets/carta.pdf';
+import carta from '../assets/Carta.pdf';
 
 export default function About() {
     return (
