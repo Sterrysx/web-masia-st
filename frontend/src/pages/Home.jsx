@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
@@ -10,32 +9,43 @@ function Home() {
     return (
         <>
             <Helmet>
-                <title>Stellar Progress | Transformación Digital y Automatización</title>
+                <title>La Masia Vacarisses | Restaurante de Cocina Tradicional Catalana</title>
                 <meta
                     name="description"
-                    content="Bienvenido a Stellar Progress. Ofrecemos soluciones de digitalización y automatización para comercios y restaurantes. ¡Descubre cómo impulsar tu negocio!"
+                    content="La Masia en Vacarisses: restaurante de cocina tradicional catalana. Platos caseros con ingredientes locales y ambiente acogedor."
                 />
                 <meta
                     name="keywords"
-                    content="Stellar Progress, digitalización, automatización, comercio, restaurante"
+                    content="La Masia, restaurante, Vacarisses, cocina tradicional catalana, gastronomía catalana"
                 />
-                <meta property="og:title" content="Stellar Progress | Transformación Digital y Automatización" />
-                <meta property="og:description" content="Soluciones a medida para que tu negocio destaque. Contáctanos." />
-                <meta property="og:image" content="https://www.tu-dominio.com/og-image.jpg" />
-                <meta property="og:url" content="https://www.tu-dominio.com/" />
+                <meta property="og:title" content="La Masia Vacarisses | Restaurante de Cocina Tradicional Catalana" />
+                <meta property="og:description" content="Visita La Masia en Vacarisses, cocina tradicional catalana con platos caseros y auténticos sabores." />
+                <meta property="og:image" content="https://restaurantmasia.cat/og-image.jpg" />
+                <meta property="og:url" content="https://restaurantmasia.cat/" />
+                <meta property="og:type" content="restaurant" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="La Masia Vacarisses | Restaurante de Cocina Tradicional Catalana" />
+                <meta name="twitter:description" content="Restaurante de cocina tradicional catalana en Vacarisses con platos caseros e ingredientes locales." />
+                <meta name="twitter:image" content="https://restaurantmasia.cat/og-image.jpg" />
+
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "Stellar Progress",
-                        "url": "https://www.tu-dominio.com",
-                        "logo": "https://www.tu-dominio.com/logo.png",
-                        "description": "Especialistas en digitalización y automatización.",
-                        "contactPoint": [{
-                            "@type": "ContactPoint",
-                            "telephone": "+34 650 341 022",
-                            "contactType": "customer service"
-                        }]
+                        "@type": "Restaurant",
+                        "name": "La Masia",
+                        "url": "https://restaurantmasia.cat/",
+                        "logo": "https://restaurantmasia.cat/logo.png",
+                        "description": "Restaurante de cocina tradicional catalana en Vacarisses, con platos caseros elaborados con ingredientes locales.",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Vacarisses",
+                            "addressRegion": "Barcelona",
+                            "addressCountry": "ES"
+                        },
+                        "telephone": "+34 650 341 022",
+                        "servesCuisine": "Cocina tradicional catalana",
+                        "image": "https://restaurantmasia.cat/og-image.jpg"
                     })}
                 </script>
             </Helmet>
