@@ -1,29 +1,33 @@
-# Ignore all node_modules folders
+###############################################################################
+#  Node / JS                                                                 #
+###############################################################################
+# All third-party dependencies – they’re huge and reproduced on every build
 node_modules/
-frontend/node_modules/
-backend/node_modules/
 
-# Build files and caches
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+# Vite / React build output
+dist/              # vite build
+build/             # if you ever use CRA
 
-# Environment and debug logs
-.env
-.env.backup
-.env.production
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-/.phpunit.cache
+# Optional cache directories
+.cache/
+.eslintcache
+*.tsbuildinfo      # TypeScript incremental build
 
-# IDE/editor settings
-/.fleet
-/.idea
-/.vscode
+###############################################################################
+#  Environment & Debug                                                        #
+###############################################################################
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+###############################################################################
+#  OS / Editor                                                                #
+###############################################################################
+.DS_Store
+Thumbs.db
 .idea/
+.vscode/
+.fleet/
+*.swp
