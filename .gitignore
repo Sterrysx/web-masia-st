@@ -1,0 +1,33 @@
+###############################################################################
+#  Node / JS                                                                 #
+###############################################################################
+# All third-party dependencies – they’re huge and reproduced on every build
+node_modules/
+
+# Vite / React build output
+dist/              # vite build
+build/             # if you ever use CRA
+
+# Optional cache directories
+.cache/
+.eslintcache
+*.tsbuildinfo      # TypeScript incremental build
+
+###############################################################################
+#  Environment & Debug                                                        #
+###############################################################################
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+###############################################################################
+#  OS / Editor                                                                #
+###############################################################################
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.fleet/
+*.swp
