@@ -5,7 +5,8 @@
 node_modules/
 
 # Vite / React build output
-dist/              # vite build
+dist/              # vite build (root)
+**/dist/           # ignore nested dist directories
 build/             # if you ever use CRA
 
 # Optional cache directories
